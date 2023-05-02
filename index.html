@@ -1,0 +1,212 @@
+<html>
+  <!-- Import Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+  <!-- End Import Scripts -->
+  <link rel="stylesheet" href="./CSS/Visualizer.css">
+  <link rel="stylesheet" href="./CSS/Home.css">
+  
+  <head>
+    <title>OK-VQAv2</title>
+  </head>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fix">
+    <a class="navbar-brand" href="#">OK-VQAv2</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <button type="button" class="btn navButton button" id="homeButton">Home</button>
+        </li>
+        <li class="nav-item active">
+          <div class="btn-group" id="buttons">
+            <button type="button" class="btn button" id="dataVisualizerButton">Data Visualizer - Validation</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            
+            <div class="dropdown-menu">
+              <div class="form-check dropdown-item">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Training
+                </label>
+              </div>
+              <div class="form-check dropdown-item">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Validation
+                </label>
+              </div>
+              <a class="dropdown-item closer" href="#" id="unsureRemove">Unsure Remove</a>
+              <a class="dropdown-item closer" href="#" id="unsureAnswer">Unsure Answer</a>
+              <a class="dropdown-item closer" href="#" id="questionRemove">Question Remove</a>
+              <a class="dropdown-item closer" href="#" id="changed">Answers Changed</a>
+            </div>
+          </div>
+          </div>
+        </li>
+      </ul>
+      <img src="./Images/GTOneLine_TechGoldandWhite.png" style="width: 200px;">
+    </div>
+  </nav>
+  
+  <body id="body">
+    <div class="home" id="home">
+      <a class="paperTitle" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Outside Knowldege Visual Question Answering Version 2</a>
+      <div class="abstract">
+        <div class="abstractTitle">Abstract</div>
+        <p class="abstractContent">Visual question answering (VQA) lies at the intersection of
+          language and vision research. It functions as a building block
+          for multimodal conversational AI and serves as a testbed for
+          assessing a model's capability for open-domain scene under-
+          standing. While progress in this area was initially accelerated
+          with the 2015 release of the popular and large dataset "VQA",
+          new datasets are required to continue this research momentum.
+          For example, the 2019 Outside Knowledge VQA dataset 
+          "OKVQA" extends VQA by adding more challenging questions
+          that require complex, factual, and commonsense knowledge.
+          However, in our analysis, we found that 41.4% of the dataset
+          needed to be corrected and 10.6% needed to be removed. This
+          paper describes the analysis, corrections, and removals 
+          completed and presents a new dataset: OK-VQA Version 2.0. To
+          gain insights into the impact of the changes on OK-VQA research, 
+          the paper presents results on state-of-the-art models
+          retrained with this new dataset. The side-by-side comparisons
+          show that one method in particular, Knowledge Augmented
+          Transformer for Vision-and-Language, extends its relative lead
+          over competing methods.
+        </p>
+      </div>
+      <div class="downloadsTitle">
+        Download & Citation
+        <div class="line"></div>
+      </div>
+      <div class="downloadsCitation">
+        <div class="downloads">
+          <div class="downloadLinks">
+            <div class="downloadDescriptor">
+              DataSet as JSON
+            </div>
+            <a href="./Data/ok-vqa_dataset2/trainingData.zip" class="btn btn-primary btn-lg active dbutton" download>
+              Training Annotations/Questions
+            </a>
+            <a href="./Data/ok-vqa_dataset2/valData.zip" class="btn btn-primary btn-lg active dbutton" download>
+              Validation Annotations/Questions
+            </a>
+          </div>
+        </div>
+        <div class = "citation">
+          <div class="downloadLinks">
+            <div class="downloadDescriptor">
+              Images
+            </div>
+            <a href="https://github.gatech.edu/jtruxal6/jtruxal6.github.io/raw/main/Data/train2014.zip" class="btn btn-primary btn-lg active dbutton" download>
+              Training Images
+            </a>
+            <div></div>
+            <a href="https://github.gatech.edu/jtruxal6/jtruxal6.github.io/raw/main/Data/val2014.zip" class="btn btn-primary btn-lg active dbutton" download>
+              Validation Images
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="downloadLinks">
+        <button class="btn btn-primary btn-lg active" id="citationBut">
+          Citation
+        </button>
+      </div>
+      <div class="authorTitle">Authors</div>
+      <div class="line"></div>
+      <div class="authors">
+        <div class="authorName">
+          <img class="author author1" src="./Images/Face1.jpg">
+          <div class="authorsName">Benjamin Z. Reichman</div>
+        </div>
+        <div class="authorName">
+          <img class="author author2" src="./Images/Face2.jpg">
+          <div class="authorsName">Anirudh Sundar</div>
+        </div>
+        <div class="authorName">
+          <img class="author author3" src="./Images/Face3.jpg">
+          <div class="authorsName">Christopher Richardson</div>
+        </div>
+        <div class="authorName">
+          <img class="author author4" src="./Images/Face4.jpg">
+          <div class="authorsName">Tamara Zubatiy</div>
+        </div>
+        <div class="authorName">
+          <img class="author author5" src="./Images/Face5.jpg">
+          <div class="authorsName">Prithwijit Chowdhury</div>
+        </div>
+        <div class="authorName">
+          <img class="author author6" src="./Images/Face6.jpg">
+          <div class="authorsName">Aaryan Shah</div>
+        </div>
+        <div class="authorName">
+          <img class="author author7" src="./Images/Face7.jpg">
+          <div class="authorsName">Jack Truxal</div>
+        </div>
+        <div class="authorName">
+          <img class="author author8" src="./Images/Face8.jpg">
+          <div class="authorsName">Micah Grimes</div>
+        </div>
+        <div class="authorName">
+          <img class="author author9" src="./Images/Face9.jpg">
+          <div class="authorsName">Dristi Shah</div>
+        </div>
+        <div class="authorName">
+          <img class="author author10" src="./Images/Face10.jpg">
+          <div class="authorsName">Woo Ju Chee</div>
+        </div>
+        <div class="authorName">
+          <img class="author author11" src="./Images/Face11.jpg">
+          <div class="authorsName">Saif Punjwani</div>
+        </div>
+        <div class="authorName">
+          <img class="author author12" src="./Images/Face12.jpg">
+          <div class="authorsName">Atishay Jain</div>
+        </div>
+        <div class="authorName">
+          <img class="author author13" src="./Images/Face13.jpg">
+          <div class="authorsName">Larry Heck</div>
+        </div>
+      </div>
+      <div class="authorTitle">Examples</div>
+      <div class="line"></div>
+      <div class="visExamples">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./Images/example1New.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./Images/example2New.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./Images/example4New.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="vizualizers" id="visBlock">
+    </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./JS/visualizer.js"></script>
+</html>

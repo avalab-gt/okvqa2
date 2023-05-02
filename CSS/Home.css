@@ -1,0 +1,219 @@
+@import url(./vars.css);
+body {
+    background-color: rgb(21 51 65);
+    color: var(--text-color);
+}
+.home {
+    text-align: center;
+    padding-top: 75px;
+    color: var(--text-color);
+}
+
+.line {
+    background-color: rgb(254, 253, 253);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 1px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.paperTitle {
+    font-size: 40px;
+    color: white;
+}
+
+.abstractTitle {
+    font-size: 20px;
+}
+
+.paperCitation {
+
+    font-size: 0.8125rem;
+    background-color: rgb(247, 249, 250);
+    color: rgb(3, 3, 3);
+    line-height: 1;
+    text-align: left;
+    margin-top: 0;
+    height: fit-content;
+    overflow-y: hidden;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgb(85, 82, 82) 5px 5px;
+}
+
+
+.abstract {
+    padding: 15px;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    border: rgb(85, 82, 82) solid;
+    border-radius: 10px;
+    box-shadow: rgb(85, 82, 82) 5px 5px;
+    background-color: white;
+}
+
+.abstractContent {
+    text-align: justify;
+}
+
+.setToggle:checked {
+    background-color: red;
+}
+
+.navButton {
+    margin-right: 5px;
+}
+
+.citationAndLink {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.citationBox {
+    width: 45%;
+}
+.paperLink {
+    color: white;
+    background: rgba(52,58,64,255);
+    border-radius: 40px;
+    width: 80px;
+}
+
+.authors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 125px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: black solid 2px;
+    border-radius: 1000px;
+}
+
+.authorTitle {
+    font-size: 40px;
+}
+
+.linkAndImage {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkImage {
+    height: 200px;
+}
+
+.navbar-fix {
+    position: fixed;
+    /* top: 0;  */
+    width: 100%; 
+}
+
+.button {
+    color: white;
+}
+
+.downloads {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.downloadsTitle {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.downloadLinks {
+    font-size: 15x;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.downloadDescriptor {
+    font-size: 25px;
+}
+
+.downloadsCitation {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.citation {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.outerExample {
+    margin-bottom: 20px;
+    min-width: 0%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btn {
+    display: block;
+}
+
+.override {
+    display: inline-block;
+}
+
+.visExampleImg {
+    height: 250px;
+    width: auto;
+}
+
+.visExample { 
+    width: 333.33px;
+}
+
+.visExample2 { 
+    width: 394px;
+}
+
+.visExamples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newAnswerEx {
+    height: 145px;
+}
+
+.carousel {
+    width: 30%;
+    margin-bottom: 3%;
+}
+
+.dbutton {
+    margin-bottom: 10px;
+}
