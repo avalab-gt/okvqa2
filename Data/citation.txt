@@ -1,0 +1,6 @@
+ @article{OK-VQAv2,
+   title={OK-VQAv2: A Benchmark for Visual Question Answering using World Knowledge},
+   author={Benjamin Reichman and Larry Heck},
+   journal={arXiv},
+   year={2022},
+ }
