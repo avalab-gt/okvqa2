@@ -95,6 +95,20 @@ body {
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
+    text-decoration:none;
+}
+
+.authorName {
+    text-decoration:none;
+}
+
+.authorName:hover {
+    text-decoration:none;
+}
+
+.authorsName {
+    color: white;
+    text-decoration:none;
 }
 
 .author {
